@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Day1/fuel.h"
+#include "Fuel//fuel.h"
 
 int main() {
 
