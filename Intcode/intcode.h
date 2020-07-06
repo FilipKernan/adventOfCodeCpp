@@ -5,13 +5,13 @@
 
 #ifndef ADVENTOFCODE_INTCODE_H
 #define ADVENTOFCODE_INTCODE_H
-int* constructArray(std::string);
+long * constructArray(std::string);
 
-void compute(int[]);
+long compute(long[]);
 
-int opcode1(int[], int*);
+void opcode1(long[], long*);
 
-int opcode2(int[], int*);
+void opcode2(long[], long*);
 
-bool validOpcode(int);
+bool validOpcode(long);
 #endif //ADVENTOFCODE_INTCODE_H

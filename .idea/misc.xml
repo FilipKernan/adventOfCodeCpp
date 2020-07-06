@@ -5,6 +5,7 @@
     <libraryRoots>
       <file path="$PROJECT_DIR$/Fuel" />
       <file path="$PROJECT_DIR$/Intcode" />
+      <file path="$PROJECT_DIR$/ReadFile" />
     </libraryRoots>
   </component>
   <component name="JavaScriptSettings">
