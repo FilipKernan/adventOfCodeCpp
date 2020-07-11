@@ -2,24 +2,20 @@
 #include "Fuel/fuel.h"
 #include "Intcode/intcode.h"
 #include "ReadFile/readFile.h"
+#include "Wires/wires.h"
+#include <algorithm>
+
 
 int main() {
 
-
+    int SIZE = 15000;
 //        std::cout << compute(constructArray("1,1,1,4,99,5,6,0,99")) << std::endl;
     std::string input =  fileToString("../PuzzleInput.txt");
+    std::vector<intersection> intersections = findIntersections(input, SIZE, SIZE);
+    intersection nearest = findClosestManhatten(intersections);
+    //intersection nearest = findClosestWireDistance(intersections);
 
-for (int i = 0; i <= 99; i++){
-    for (int j = 0; j <= 99; j++){
-        std::string workingString;
-        workingString = input.substr(0, 2) + std::to_string(i) + "," + std::to_string(j) + input.substr(5);
-
-        if (compute(constructArray(workingString)) == 19690720) {
-            std::cout << std::to_string((100 * i) + j) << std::endl;
-        }
-
-    }
-}
-
+    std::cout << abs(nearest.x - SIZE/2) + abs(nearest.y - SIZE/2) << std::endl;
+    //std::cout << nearest.xSteps + nearest.ySteps << std::endl;
     return 0;
 }

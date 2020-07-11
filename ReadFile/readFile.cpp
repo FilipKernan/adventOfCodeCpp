@@ -7,7 +7,7 @@ std::string fileToString(std::string address){
     std::ifstream read(address);
     std::string output, endString;
     while(getline(read, output)) {
-        endString += output;
+        endString += "\n" + output;
     }
     return endString;
 }

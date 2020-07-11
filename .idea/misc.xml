@@ -6,6 +6,7 @@
       <file path="$PROJECT_DIR$/Fuel" />
       <file path="$PROJECT_DIR$/Intcode" />
       <file path="$PROJECT_DIR$/ReadFile" />
+      <file path="$PROJECT_DIR$/Wires" />
     </libraryRoots>
   </component>
   <component name="JavaScriptSettings">

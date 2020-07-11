@@ -1,0 +1,13 @@
+start by parsing each to make a 2d array
+first find all intersections, where there is a 1 on both arrays, search
+for each note the cords in an array of structs
+Manhattan distance to sort array and choose lowest
+
+
+
+latter reparse the original strings keeping track of the the cords along the way
+    have struct that stores the cords of each intersection and the index of when the cross happens
+        inital value for indexes will be 0
+        every 20 cycles, check if there is a cord where the added steps is < cycles * 2, exclude 0 steps
+    Remove all cords where there is a 0 in the steps
+    Sort by added steps, return the min
