@@ -9,13 +9,7 @@
 
 int main() {
 
-    range puzzleRange;
-    puzzleRange.max = 676461;
-    puzzleRange.min = 178416;
-//    if (testNumForValidity(112233)) {
-//        std::cout << "hello" << std::endl;
-//    }
-    std::cout << possiblePasscodes(puzzleRange) << std::endl;
-
+    std::string input =  fileToString("../PuzzleInput.txt");
+    compute(constructArray(input));
     return 0;
 }
