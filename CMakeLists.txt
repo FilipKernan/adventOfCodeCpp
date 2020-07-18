@@ -9,13 +9,15 @@ add_subdirectory(Fuel)
 add_subdirectory(Intcode)
 add_subdirectory(ReadFile)
 add_subdirectory(Wires)
+add_subdirectory(Numbers)
+
 
 
 
 
 add_executable(adventOfCode main.cpp)
 
-target_link_libraries(adventOfCode PUBLIC Fuel Intcode ReadFile Wires)
+target_link_libraries(adventOfCode PUBLIC Fuel Intcode ReadFile Wires Numbers)
 
 # add the binary tree to the search path for include files
 
@@ -25,4 +27,5 @@ target_include_directories(adventOfCode PUBLIC
         "${PROJECT_SOURCE_DIR}/Intcode"
         "${PROJECT_SOURCE_DIR}/ReadFile"
         "${PROJECT_SOURCE_DIR}/Wires"
+        "${PROJECT_SOURCE_DIR}/Numbers"
         )
